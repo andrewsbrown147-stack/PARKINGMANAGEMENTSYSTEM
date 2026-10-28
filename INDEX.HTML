@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Parking Management System</h1>
+        <p>A Stack Data Structure Application</p>
+    </header>
+
+    <section class="parking-card">
+        <h2>Park a Car</h2>
+
+        <form id="parkingForm">
+            <label for="carNumber">Car Registration Number</label>
+
+            <input
+                type="text"
+                id="carNumber"
+                placeholder="Example: GR 1234-26"
+                required
+            >
+
+            <button type="submit" class="park-btn">
+                Park Car
+            </button>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="controls">
+        <button id="removeBtn" class="remove-btn">
+            Remove Top Car
+        </button>
+
+        <button id="peekBtn" class="peek-btn">
+            View Top Car
+        </button>
+
+        <button id="clearBtn" class="clear-btn">
+            Clear Parking
+        </button>
+    </section>
+
+    <section class="parking-card">
+        <h2>Parked Cars</h2>
+
+        <p>
+            Total Cars: <span id="carCount">0</span>
+        </p>
+
+        <div id="parkingArea" class="parking-area">
+            <p class="empty-message">No cars are parked yet.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Developed using HTML, CSS and JavaScript</p>
+        <p>Stack Principle: Last In, First Out (LIFO)</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
